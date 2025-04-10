@@ -1,0 +1,26 @@
+main {
+    display: block;
+    padding: 10vh 5%;
+    box-sizing: border-box;
+    background-color: rgb(80, 9, 94);
+}
+
+div {
+    width: 60%;
+}
+
+h2 {
+    font-size: 4vw;
+    font-family: "Borel", cursive;
+    color: rgb(99, 232, 255);
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1.5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
