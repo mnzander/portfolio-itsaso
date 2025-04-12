@@ -3,24 +3,50 @@ main {
     padding: 10vh 5%;
     box-sizing: border-box;
     background-color: rgb(80, 9, 94);
+
+    .main-container {
+        display: flex;
+        align-items: center;
+        gap: 8vw;
+
+        .text-info {
+            width: 60%;
+        
+            h2 {
+                font-size: 4vw;
+                font-family: "Borel", cursive;
+                color: rgb(99, 232, 255);
+                margin: 0;
+                padding: 0;
+            }
+            
+            p {
+                font-size: 1.5vw;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: white;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        .profile-pic {
+            border-radius: 50%;
+            width: 22vw;
+            height: 22vw;
+            object-fit: cover;
+            border: 6px solid white;
+            box-shadow: 0 12px 24px rgba(255, 255, 255, .7);
+            animation: float 5s infinite ease-in-out;
+            cursor: crosshair;
+        }    
+    }    
 }
 
-div {
-    width: 60%;
-}
-
-h2 {
-    font-size: 4vw;
-    font-family: "Borel", cursive;
-    color: rgb(99, 232, 255);
-    margin: 0;
-    padding: 0;
-}
-
-p {
-    font-size: 1.5vw;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    margin: 0;
-    padding: 0;
+@keyframes float {
+    0%, 100% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
